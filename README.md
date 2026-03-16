@@ -13,18 +13,18 @@ Este projeto tem como finalidade fornecer uma base simples para a personalizaç�
 
 # Tecnologias utilizadas
 
- Node.js
- whatsapp-web.js
- puppeteer
- qrcode-terminal
+ - Node.js
+ - whatsapp-web.js
+ - puppeteer
+ - qrcode-terminal
 
  # Requisitos
 
 Antes de executar o projeto, certifique-se de ter instalado:
 
- Node.js 18+
- NPM
- Google Chrome ou Chromium
+ - Node.js 18+
+ - NPM
+ - Google Chrome ou Chromium
 
  # Instalação
 
