@@ -80,4 +80,12 @@ Execute o bot novamente
 
 Essa estrutura é apenas uma base, para personalizar, você deve modificar o arquivo fluxos.js, principalmente o campo "acao; acao('mensagem')" 
 
+## Nota
+
+Este projeto foi originalmente inspirado em um exemplo de código encontrado na internet.
+
+A partir dessa base inicial, o código foi significativamente modificado e expandido, evoluindo para uma pequena engine de fluxo para automação de atendimento via WhatsApp.
+
+Uma versão personalizada deste projeto também é utilizada em ambiente de trabalho, baseada nesta implementação pública, porém adaptada para necessidades específicas.
+
  
