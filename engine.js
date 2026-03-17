@@ -34,6 +34,20 @@ client.on("disconnected", (reason) => {
 
 client.initialize();
 
+//função para tratamento de mensagens inválidas
+
+function incrementarTentativa(from) {
+  const estado = getUserState(from);
+
+  if (!estado.tentativasInvalidas) {
+    estado.tentativasInvalidas = 0;
+  }
+
+  estado.tentativasInvalidas++;
+
+  return estado.tentativasInvalidas;
+}
+
 // ínicio do motor
 
 async function processarFluxo(from, chat, fluxoId, perguntaIndex = 0) {
@@ -168,23 +182,6 @@ client.on("message", async (msg) => {
 
     const estado = getUserState(from);
 
-estado.tentativasInvalidas++;
-
- if (estado.tentativasInvalidas >= 3) {
-
-  await client.sendMessage(
-    from,
-    "⚠️ Não consegui entender.\nDigite uma opção válida"
-  );
-
-  resetUserState(from);
-  return;
-}
-
-
-
-
-    
     // FLUXO ATIVO
     
 
@@ -266,6 +263,18 @@ estado.tentativasInvalidas++;
 
         return;
       }
+
+const tentativas = incrementarTentativa(from);
+
+if (tentativas >= 3) {
+  await client.sendMessage(
+    from,
+    "⚠️ Não consegui entender.\nDigite uma opção válida"
+  );
+
+  resetUserState(from);
+}
+      
     }
 
     
