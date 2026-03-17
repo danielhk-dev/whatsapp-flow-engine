@@ -5,11 +5,11 @@ Engine simples para criação de automações de atendimento utilizando a biblio
 Este projeto tem como finalidade fornecer uma base simples para a personalização de diversos tipos de atendimento, por meio de menus e perguntas sequenciais, permitindo que qualquer pessoa o personalize de forma fácil por meio do arquivo "fluxos.js".
 
 # Funcionalidades 
-**Sistema de **menus e opções**
- **Perguntas sequenciais**
- **Redirecionamento de fluxos**
-**Controle de estados do usuário**
-**Base genérica para diferentes tipos de automação**
+- Sistema de **menus e opções
+ - Perguntas sequenciais
+ - Redirecionamento de fluxos
+- Controle de estados do usuário
+- Base genérica para diferentes tipos de automação
 
 # Tecnologias utilizadas
 
@@ -38,7 +38,7 @@ Entre na pasta do projeto:
 ```bash
 cd whatsapp-flow-engine
 ```
-Instale as depêndencias:
+Instale as dependências:
 
 ```bash
 npm install
